@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+  NEWSLETTER TEMPLATE
+================================================================================
+
+  HOW TO USE FOR A NEW ISSUE
+  1. Change the <title> and the preheader text (hidden preview line in the inbox).
+  2. In the HEADER, update the newsletter title and the issue date.
+  3. Replace the HERO image.
+  4. Edit, copy or delete the SECTIONS. Each section starts and ends with a
+     clearly marked comment. Copy a whole section to add another one.
+  5. Sections should alternate: WHITE -> GRAY -> WHITE -> GRAY ...
+  6. Update the FOOTER text if needed.
+
+  BUILDING BLOCKS (copy them between sections as you like)
+  - Section title + text
+  - Photo with caption box ("Familie Steinbock")
+  - Large photo (full width inside a section)
+  - Two photos side by side
+  - Text + photo side by side
+
+  IMAGE SIZES (the "width" attribute and the width in "style" must match)
+  - Hero image .................. 600 px
+  - Large photo in a section .... 528 px
+  - Two photos side by side ..... 259 px each
+  - Photo with caption box ...... 300 px
+  - Photo next to text .......... 250 px
+  Upload images at double size (e.g. 1200 px) so they look sharp on phones.
+  Always fill in the "alt" text (shown if images are blocked).
+
+  COLORS
+  - Navy (titles, footer) ....... #20304A
+  - Gray (alternating sections) . #D6DCE8
+  - Page background ............. #F2F4F8
+  - Body text ................... #333D4D
+  - Small / muted text .......... #6A7890
+
+  FONTS
+  - Titles and body text: Georgia (serif)
+  - Small text (date, footer):   Arial (sans-serif)
+
+  NOTE: Email programs ignore most modern CSS. That is why this template uses
+  tables and inline styles. Keep that structure when editing.
+================================================================================
+-->
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="color-scheme" content="light only">
+
+  <!-- ✏️ Title of the email (shown in browser tab / some mail apps) -->
+  <title>Von Zermatt nach Zinal – August 2026</title>
+
+  <style>
+    body { margin: 0; padding: 0; }
+    img  { -ms-interpolation-mode: bicubic; }
+    a    { color: inherit; }
+
+    /* Mobile: columns stack on top of each other, images become full width */
+    @media only screen and (max-width: 620px) {
+      .wrap  { width: 100% !important; }
+      .stack { display: block !important; width: 100% !important; box-sizing: border-box; }
+      .fluid { width: 100% !important; }
+      .pad   { padding-left: 20px !important; padding-right: 20px !important; }
+    }
+  </style>
+</head>
+
+<body style="margin:0; padding:0; background:#F2F4F8;">
+
+  <!-- ✏️ PREHEADER: preview text shown in the inbox next to the subject -->
+  <div style="display:none; max-height:0; overflow:hidden; opacity:0;">
+    Zermatt, Steinböcke, Arbengrat und die Überschreitung nach Zinal.
+  </div>
+
+  <!-- Page background -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#F2F4F8;">
+    <tr>
+      <td align="center" style="padding:24px 0;">
+
+        <!-- Newsletter container (600 px wide) -->
+        <table role="presentation" class="wrap" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px; background:#FFFFFF;">
+
+
+          <!-- ===================================================== -->
+          <!-- HEADER                                                -->
+          <!-- ===================================================== -->
+          <tr>
+            <td class="pad" style="padding:32px 36px 24px; border-bottom:1px solid #D6DCE8;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <!-- ✏️ Newsletter title -->
+                  <td class="stack" style="font-family:Georgia,'Times New Roman',serif; font-size:28px; font-weight:bold; color:#20304A;">
+                    Von chlei Venedig uber Venedig nach Paklenica
+                  </td>
+                  <!-- ✏️ Issue date -->
+                  <td class="stack" align="right" style="font-family:Arial,Helvetica,sans-serif; font-size:13px; color:#6A7890;">
+                    September 26
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END HEADER -->
+
+
+          <!-- ===================================================== -->
+          <!-- HERO IMAGE (600 px)                                   -->
+          <!-- ===================================================== -->
+          <tr>
+            <td>
+              <img src="https://gimi9_cyeeh_zxu1ghikej5lyqamdxxzee9o712b--o.canva-cdn.email/1884968cb8ffc4c39fb7ca0c92438b43.jpg"
+                   width="600" alt="Bergpanorama zum Tourstart" class="fluid"
+                   style="display:block; width:600px; max-width:100%; height:auto; border:0; outline:0;">
+            </td>
+          </tr>
+          <!-- END HERO IMAGE -->
+
+
+          <!-- ===================================================== -->
+          <!-- SECTION 1 — WHITE                                     -->
+          <!-- ===================================================== -->
+          <tr>
+            <td style="background:#FFFFFF;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+                <!-- BLOCK: Section title + text -->
+                <tr>
+                  <td class="pad" style="padding:40px 36px 32px;">
+                    <div style="font-family:Georgia,'Times New Roman',serif; font-size:34px; line-height:1.15; font-weight:bold; color:#20304A; letter-spacing:-0.5px;">
+                      Gemütlicher Hüttenzustieg
+                    </div>
+                    <div style="font-family:Georgia,'Times New Roman',serif; font-size:17px; line-height:1.65; color:#333D4D; padding-top:14px;">
+                      Am ersten Tag der Tour sind wir in Zermatt gestartet und haben uns die ersten Höhenmeter mit der Gondel gespart. Der Zustieg kam uns super kurz vor – der einzige Kampf war der zwischen den Steinböcken, die unseren Weg gekreuzt haben. Nach dem feinen Znacht mit hochgeschlepptem Apfelmus zu Hörnli und Ghacktem schliefen wir früh ein, um für die Tour am nächsten Tag bereit zu sein.
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- BLOCK: Photo with caption box (300 px) -->
+                <tr>
+                  <td class="pad" style="padding:0 36px 40px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#D6DCE8;">
+                      <tr>
+                        <td class="stack" width="300" valign="top">
+                          <img src="https://gimi9_cyeeh_zxu1ghikej5lyqamdxxzee9o712b--o.canva-cdn.email/358800c4f91a96c74bce1c649c61833e.jpg"
+                               width="300" alt="Steinböcke am Wegrand" class="fluid"
+                               style="display:block; width:300px; max-width:100%; height:auto; border:0; outline:0;">
+                        </td>
+                        <td class="stack" valign="bottom" style="padding:20px; font-family:Georgia,'Times New Roman',serif; font-size:20px; font-style:italic; color:#20304A;">
+                          Familie Steinbock
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+          <!-- END SECTION 1 -->
+
+
+          <!-- ===================================================== -->
+          <!-- SECTION 2 — GRAY                                      -->
+          <!-- ===================================================== -->
+          <tr>
+            <td style="background:#D6DCE8;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+                <!-- BLOCK: Section title + text -->
+                <tr>
+                  <td class="pad" style="padding:40px 36px 24px;">
+                    <div style="font-family:Georgia,'Times New Roman',serif; font-size:34px; line-height:1.15; font-weight:bold; color:#20304A; letter-spacing:-0.5px;">
+                      Ober Gabelhorn
+                    </div>
+                    <div style="font-family:Georgia,'Times New Roman',serif; font-size:17px; line-height:1.65; color:#333D4D; padding-top:14px;">
+                      Über den leicht verschneiten Arbengrat, bei starkem Wind.
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- BLOCK: Large photo (528 px) -->
+                <tr>
+                  <td class="pad" style="padding:0 36px;">
+                    <img src="https://gimi9_cyeeh_zxu1ghikej5lyqamdxxzee9o712b--o.canva-cdn.email/b71c1a7529b5c2b7ccadd597feef4851.jpg"
+                         width="528" alt="Arbengrat" class="fluid"
+                         style="display:block; width:528px; max-width:100%; height:auto; border:0; outline:0;">
+                  </td>
+                </tr>
+
+                <!-- BLOCK: Two photos side by side (259 px each) -->
+                <tr>
+                  <td class="pad" style="padding:10px 36px 40px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td class="stack" width="50%" valign="top" style="padding-right:5px;">
+                          <img src="https://gimi9_cyeeh_zxu1ghikej5lyqamdxxzee9o712b--o.canva-cdn.email/12d4992bcce2ddc1ca23f4157cd5e439.jpg"
+                               width="259" alt="Unterwegs am Grat" class="fluid"
+                               style="display:block; width:259px; max-width:100%; height:auto; border:0; outline:0;">
+                        </td>
+                        <td class="stack" width="50%" valign="top" style="padding-left:5px;">
+                          <img src="https://gimi9_cyeeh_zxu1ghikej5lyqamdxxzee9o712b--o.canva-cdn.email/6a4d1d569e4e9e9b6765d7005d94da71.jpg"
+                               width="259" alt="Gipfelmoment" class="fluid"
+                               style="display:block; width:259px; max-width:100%; height:auto; border:0; outline:0;">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- BLOCK: Two photos side by side (259 px each) -->
+                <tr>
+                  <td class="pad" style="padding:10px 36px 40px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td class="stack" width="50%" valign="top" style="padding-right:5px;">
+                          <img src="https://gimi9_cyeeh_zxu1ghikej5lyqamdxxzee9o712b--o.canva-cdn.email/12d4992bcce2ddc1ca23f4157cd5e439.jpg"
+                               width="259" alt="Unterwegs am Grat" class="fluid"
+                               style="display:block; width:259px; max-width:100%; height:auto; border:0; outline:0;">
+                        </td>
+                        <td class="stack" width="50%" valign="top" style="padding-left:5px;">
+                          <img src="https://gimi9_cyeeh_zxu1ghikej5lyqamdxxzee9o712b--o.canva-cdn.email/6a4d1d569e4e9e9b6765d7005d94da71.jpg"
+                               width="259" alt="Gipfelmoment" class="fluid"
+                               style="display:block; width:259px; max-width:100%; height:auto; border:0; outline:0;">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+          <!-- END SECTION 2 -->
+
+
+          <!-- ===================================================== -->
+          <!-- SECTION 3 — WHITE                                     -->
+          <!-- ===================================================== -->
+          <tr>
+            <td style="background:#FFFFFF;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+                <!-- BLOCK: Text + photo side by side (photo 250 px) -->
+                <tr>
+                  <td class="pad" style="padding:40px 36px 44px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td class="stack" valign="top" style="padding-right:24px;">
+                          <div style="font-family:Georgia,'Times New Roman',serif; font-size:34px; line-height:1.15; font-weight:bold; color:#20304A; letter-spacing:-0.5px;">
+                            Zinalrothorn
+                          </div>
+                          <div style="font-family:Georgia,'Times New Roman',serif; font-size:17px; line-height:1.65; color:#333D4D; padding-top:14px;">
+                            Nach einer Übernachtung in der Rothornhütte wagten wir die Überschreitung nach Zinal. Für den Aufstieg wählten wir den Rothorngrat.
+                          </div>
+                        </td>
+                        <td class="stack" width="250" valign="top">
+                          <img src="https://gimi9_cyeeh_zxu1ghikej5lyqamdxxzee9o712b--o.canva-cdn.email/14a307d1e12d472631c5099addf73ae8.jpg"
+                               width="250" alt="Aufstieg über den Rothorngrat" class="fluid"
+                               style="display:block; width:250px; max-width:100%; height:auto; border:0; outline:0;">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+          <!-- END SECTION 3 -->
+
+
+          <!-- ===================================================== -->
+          <!-- FOOTER — NAVY                                         -->
+          <!-- ===================================================== -->
+          <tr>
+            <td class="pad" style="background:#20304A; padding:32px 36px; font-family:Arial,Helvetica,sans-serif; font-size:15px; line-height:1.6; color:#FFFFFF;">
+              <div style="font-family:Georgia,'Times New Roman',serif; font-size:20px; font-weight:bold; padding-bottom:6px;">
+                Bis zum nächsten Mal
+              </div>
+              <!-- ✏️ Update the month of the next issue -->
+              Die nächste Ausgabe kommt im September. Wer mitlesen möchte:
+              <a href="https://forms.gle/qRsbUFG2aygkXx288" style="color:#FFFFFF; font-weight:bold; text-decoration:underline;">E-Mail-Adresse eintragen</a>
+            </td>
+          </tr>
+          <!-- END FOOTER -->
+
+
+        </table>
+        <!-- End newsletter container -->
+
+      </td>
+    </tr>
+  </table>
+  <!-- End page background -->
+
+</body>
+</html>
