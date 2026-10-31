@@ -1,0 +1,772 @@
+<!doctype html>
+<!--
+================================================================================
+  NEWSLETTER TEMPLATE
+================================================================================
+
+  HOW TO USE FOR A NEW ISSUE
+  1. Change the <title> and the preheader text (hidden preview line in the
+  inbox).
+  2. In the HEADER, update the newsletter title and the issue date.
+  3. Replace the HERO image.
+  4. Edit, copy or delete the SECTIONS. Each section starts and ends with a
+     clearly marked comment. Copy a whole section to add another one.
+  5. Sections should alternate: WHITE -> GRAY -> WHITE -> GRAY ...
+  6. Update the FOOTER text if needed.
+
+  BUILDING BLOCKS (copy them between sections as you like)
+  - Section title + text
+  - Photo with caption box ("Familie Steinbock")
+  - Large photo (full width inside a section)
+  - Two photos side by side
+  - Text + photo side by side
+
+  IMAGE SIZES (the "width" attribute and the width in "style" must match)
+  - Hero image .................. 600 px
+  - Large photo in a section .... 528 px
+  - Two photos side by side ..... 259 px each
+  - Photo with caption box ...... 300 px
+  - Photo next to text .......... 250 px
+  Upload images at double size (e.g. 1200 px) so they look sharp on phones.
+  Always fill in the "alt" text (shown if images are blocked).
+
+  COLORS
+  - Navy (titles, footer) ....... #20304A
+  - Gray (alternating sections) . #D6DCE8
+  - Page background ............. #F2F4F8
+  - Body text ................... #333D4D
+  - Small / muted text .......... #6A7890
+
+  FONTS
+  - Titles and body text: Georgia (serif)
+  - Small text (date, footer):   Arial (sans-serif)
+
+  NOTE: Email programs ignore most modern CSS. That is why this template uses
+  tables and inline styles. Keep that structure when editing.
+
+  IMAGES IN THIS ISSUE: the src attributes point to the local "img/" folder so
+  the file can be previewed in a browser. Before sending, upload the photos and
+  replace the relative paths with the hosted URLs.
+================================================================================
+-->
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light only" />
+
+    <!-- ✏️ Title of the email (shown in browser tab / some mail apps) -->
+    <title>
+      Lieber Ajvar als kei Waar – Oktober 2026
+    </title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+      a {
+        color: inherit;
+      }
+
+      /* Mobile: columns stack on top of each other, images become full width */
+      @media only screen and (max-width: 620px) {
+        .wrap {
+          width: 100% !important;
+        }
+        .stack {
+          display: block !important;
+          width: 100% !important;
+          box-sizing: border-box;
+        }
+        .fluid {
+          width: 100% !important;
+        }
+        .pad {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0; padding: 0; background: #f2f4f8">
+    <!-- ✏️ PREHEADER: preview text shown in the inbox next to the subject -->
+    <div style="display: none; max-height: 0; overflow: hidden; opacity: 0">
+      Montenegro, Peaks of Balkans, Tirana und weiterhin genug Ajvar.
+    </div>
+
+    <!-- Page background -->
+    <table
+      role="presentation"
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      style="background: #f2f4f8"
+    >
+      <tr>
+        <td align="center" style="padding: 24px 0">
+          <!-- Newsletter container (600 px wide) -->
+          <table
+            role="presentation"
+            class="wrap"
+            width="600"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            style="width: 600px; max-width: 600px; background: #ffffff"
+          >
+            <!-- ===================================================== -->
+            <!-- HEADER                                                -->
+            <!-- ===================================================== -->
+            <tr>
+              <td
+                class="pad"
+                style="
+                  padding: 32px 36px 24px;
+                  border-bottom: 1px solid #d6dce8;
+                "
+              >
+                <table
+                  role="presentation"
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                >
+                  <tr>
+                    <!-- ✏️ Newsletter title -->
+                    <td
+                      class="stack"
+                      style="
+                        font-family:
+                          Georgia, &quot;Times New Roman&quot;, serif;
+                        font-size: 28px;
+                        font-weight: bold;
+                        color: #20304a;
+                      "
+                    >
+                      Lieber Ajvar als kei Waar
+                    </td>
+                    <!-- ✏️ Issue date -->
+                    <td
+                      class="stack"
+                      align="right"
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 13px;
+                        color: #6a7890;
+                      "
+                    >
+                      Oktober 26
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- END HEADER -->
+
+            <!-- ===================================================== -->
+            <!-- HERO IMAGE (600 px)                                   -->
+            <!-- ===================================================== -->
+            <tr>
+              <td>
+                <img
+                  src="img/a01_bovilla_see.jpg"
+                  width="600"
+                  alt="Der Stausee Bovilla"
+                  class="fluid"
+                  style="
+                    display: block;
+                    width: 600px;
+                    max-width: 100%;
+                    height: auto;
+                    border: 0;
+                    outline: 0;
+                  "
+                />
+              </td>
+            </tr>
+            <!-- END HERO IMAGE -->
+
+            <!-- ===================================================== -->
+            <!-- SECTION 1 — WHITE                                 -->
+            <!-- ===================================================== -->
+            <tr>
+              <td style="background: #ffffff">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <!-- BLOCK: Section title + text -->
+                  <tr>
+                    <td class="pad" style="padding: 40px 36px 24px">
+                      <div style="font-family: Georgia, &quot;Times New Roman&quot;, serif; font-size: 34px; line-height: 1.15; font-weight: bold; color: #20304a; letter-spacing: -0.5px;">
+                        Montenegro
+                      </div>
+                      <div style="font-family: Georgia, &quot;Times New Roman&quot;, serif; font-size: 17px; line-height: 1.65; color: #333d4d; padding-top: 14px;">
+                        Nach dem Kletterfestival in Bosnien machen wir uns auf den Weg Richtung Montenegro. Wir verlassen nicht nur den Menschen-Trubel, sondern auch eine wahnsinnig gute Bäckerei welche von einem Kletterer geführt wird. Doch es sind zum Glück nicht die letzten guten Böreks die wir essen und auch die Versorgung mit Ajvar ist weiterhin gesichert.
+                      </div>
+                      <div style="font-family: Georgia, &quot;Times New Roman&quot;, serif; font-size: 17px; line-height: 1.65; color: #333d4d; padding-top: 14px;">
+                        In Montenegro gibt es in unmittelbarer Nähe der Hauptstadt Podgorica viel zu klettern. Das erste Gebiet welches wir ansteuern heisst Smokovac und wird von den Kletterern aus Montenegro „Smoki“ genannt. Wir merken jedoch schnell, dass neben tollem Fels uns in einem Klettergebiet auch noch andere Dinge wichtig sind. Smoki liegt in einem engen Tal zusammen mit einer Autobahn, einer vielbefahrenen Hauptstrasse und einer Zuglinie. Aus diesem Grund verlassen wir Podgorica schon nach wenigen Tagen und fahren ans Meer für etwas mehr Ruhe.
+                      </div>
+                      <div style="font-family: Georgia, &quot;Times New Roman&quot;, serif; font-size: 17px; line-height: 1.65; color: #333d4d; padding-top: 14px;">
+                        Mit frischer Energie verbringen wir ein paar Tage in der Nähe von Bar, im schön gelegenen Klettergebiet „Zupci“ mit kleinem Fluss zum Baden und vielen sehr freundlichen Anwohnern die uns täglich grüssen, wenn sie ihre Kanister mit dem Quellwasser in der Nähe unseres Parkplatzes befüllen. Hier lernen wir nur einen anderen Kletterer kennen. Tim, aus Russland, er ist aber nur nachts im Dunkeln und ohne Seil „Free-Solo“ unterwegs. Auf seinem Nachhauseweg macht er immer Halt bei unserem Van und ist glücklich dass er ein wenig Englisch üben kann.
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Photo row, equal height (259 + 259 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 0px 36px 0px">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td class="stack" width="264" valign="top" style="padding-right: 5px;">
+                              <img
+                                src="img/m_bucht_bar.jpg"
+                                width="259"
+                                alt="Die Bucht bei Bar"
+                                class="fluid"
+                                style="display: block; width: 259px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Die Bucht bei Bar
+                              </div>
+                          </td>
+                          <td class="stack" width="264" valign="top" style="padding-left: 5px;">
+                              <img
+                                src="img/m_tigerstreifen.jpg"
+                                width="259"
+                                alt="Tigerstreifen"
+                                class="fluid"
+                                style="display: block; width: 259px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Tigerstreifen
+                              </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Large photo (528 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 10px 36px 40px">
+                      <img
+                        src="img/m_zupci.jpg"
+                        width="528"
+                        alt="Das Klettergebiet Zupci"
+                        class="fluid"
+                        style="display: block; width: 528px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                      />
+                      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                        Das Klettergebiet Zupci
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- END SECTION 1 -->
+
+            <!-- ===================================================== -->
+            <!-- SECTION 2 — GRAY                                  -->
+            <!-- ===================================================== -->
+            <tr>
+              <td style="background: #d6dce8">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <!-- BLOCK: Section title + text -->
+                  <tr>
+                    <td class="pad" style="padding: 40px 36px 24px">
+                      <div style="font-family: Georgia, &quot;Times New Roman&quot;, serif; font-size: 34px; line-height: 1.15; font-weight: bold; color: #20304a; letter-spacing: -0.5px;">
+                        Peaks of Balkans
+                      </div>
+                      <div style="font-family: Georgia, &quot;Times New Roman&quot;, serif; font-size: 17px; line-height: 1.65; color: #333d4d; padding-top: 14px;">
+                        Da die folgenden Tage laut Wetterbericht viel Regen bringen sollen, entscheiden wir uns für unser bewährtes Schlecht-Wetter-Programm und gehen wandern.
+                      </div>
+                      <div style="font-family: Georgia, &quot;Times New Roman&quot;, serif; font-size: 17px; line-height: 1.65; color: #333d4d; padding-top: 14px;">
+                        Im Länderdreieck zwischen Montenegro, Albanien und Kosovo, gibt es den Weitwanderweg „Peaks of Balkan Trail“. Für 3 Tage wandern wir mehr oder weniger auf diesem Weg, von Plav (Montenegro) nach Cerem und Doberdol (beide in Albanien). Für die Bewilligung der Landeswechsel reicht unsere spontane Planung nicht, wir haben jedoch Glück und unsere fünf illegalen Grenzübertritte fallen ausser ein paar streunenden Hunden niemandem auf.
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Photo row, equal height (259 + 259 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 0px 36px 0px">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td class="stack" width="264" valign="top" style="padding-right: 5px;">
+                              <img
+                                src="img/p_grenze_kosovo.jpg"
+                                width="259"
+                                alt="An der Grenze zum Kosovo"
+                                class="fluid"
+                                style="display: block; width: 259px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                An der Grenze zum Kosovo
+                              </div>
+                          </td>
+                          <td class="stack" width="264" valign="top" style="padding-left: 5px;">
+                              <img
+                                src="img/p_welcome_to_albania.jpg"
+                                width="259"
+                                alt="Welcome to Albania"
+                                class="fluid"
+                                style="display: block; width: 259px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Welcome to Albania
+                              </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Section text -->
+                  <tr>
+                    <td class="pad" style="padding: 32px 36px 24px">
+                      <div style="font-family: Georgia, &quot;Times New Roman&quot;, serif; font-size: 17px; line-height: 1.65; color: #333d4d;">
+                        Eine junge Welpin verfolgt uns für ganze zwei Tage und wir sind kurz davor sie zu adoptieren. Ein traumatischer Zusammenstoss mit acht wolfsgrossen Schäferhunden und die Aussicht auf die vielen aggressiven Strassenhunde in den Städten halten uns jedoch davon ab.
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Photo row, equal height (332 + 186 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 0px 36px 0px">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td class="stack" width="337" valign="top" style="padding-right: 5px;">
+                              <img
+                                src="img/p_sara_welpin.jpg"
+                                width="332"
+                                alt="Sara mit der Welpin"
+                                class="fluid"
+                                style="display: block; width: 332px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Sara mit der Welpin
+                              </div>
+                          </td>
+                          <td class="stack" width="191" valign="top" style="padding-left: 5px;">
+                              <img
+                                src="img/p_welpin.jpg"
+                                width="186"
+                                alt="Die Welpin"
+                                class="fluid"
+                                style="display: block; width: 186px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Die Welpin
+                              </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Section text -->
+                  <tr>
+                    <td class="pad" style="padding: 32px 36px 24px">
+                      <div style="font-family: Georgia, &quot;Times New Roman&quot;, serif; font-size: 17px; line-height: 1.65; color: #333d4d;">
+                        Die Wanderung führt durch eine tolle Herbstlandschaft und auch das Wetter ist besser als erwartet. Wir schlafen in kleinen Gasthäusern, die uns mit albanischem Essen, eigenem Zimmer und warmer Dusche verwöhnen. Nach gut einem Monat in unserem kleinen Auto sind die 6 m² Einzelzimmer purer Luxus.
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Large photo (528 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 0px 36px 0px">
+                      <img
+                        src="img/p_nebel_berge.JPG"
+                        width="528"
+                        alt="Nebel in den Bergen"
+                        class="fluid"
+                        style="display: block; width: 528px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                      />
+                      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                        Nebel in den Bergen
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Photo row, equal height (259 + 259 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 10px 36px 0px">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td class="stack" width="264" valign="top" style="padding-right: 5px;">
+                              <img
+                                src="img/p_herbstwald.jpg"
+                                width="259"
+                                alt="Herbstwald"
+                                class="fluid"
+                                style="display: block; width: 259px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Herbstwald
+                              </div>
+                          </td>
+                          <td class="stack" width="264" valign="top" style="padding-left: 5px;">
+                              <img
+                                src="img/p_schafe.jpg"
+                                width="259"
+                                alt="Schafe"
+                                class="fluid"
+                                style="display: block; width: 259px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Schafe
+                              </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Large photo (528 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 10px 36px 40px">
+                      <img
+                        src="img/p_landschaft.jpg"
+                        width="528"
+                        alt="Die Landschaft auf dem Peaks of Balkans Trail"
+                        class="fluid"
+                        style="display: block; width: 528px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                      />
+                      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                        Die Landschaft auf dem Peaks of Balkans Trail
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- END SECTION 2 -->
+
+            <!-- ===================================================== -->
+            <!-- SECTION 3 — WHITE                                 -->
+            <!-- ===================================================== -->
+            <tr>
+              <td style="background: #ffffff">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <!-- BLOCK: Section title + text -->
+                  <tr>
+                    <td class="pad" style="padding: 40px 36px 24px">
+                      <div style="font-family: Georgia, &quot;Times New Roman&quot;, serif; font-size: 34px; line-height: 1.15; font-weight: bold; color: #20304a; letter-spacing: -0.5px;">
+                        Albanien
+                      </div>
+                      <div style="font-family: Georgia, &quot;Times New Roman&quot;, serif; font-size: 17px; line-height: 1.65; color: #333d4d; padding-top: 14px;">
+                        Wir fahren nun weiter nach Albanien zum Stausee Bovilla. Vor der Fahrt haben wir uns über den Zustand der Strasse die zum See hochführt bei anderen Reisenden und dem Internet erkundet: „it’s a nightmare!“. Ein Paar aus der Schweiz mit einem VW California rät uns ab es überhaupt zu versuchen: „wir sahen die Schlaglöcher, ohne 4x4 ist es unmöglich und wir sind umgekehrt!“. Wir wollen es trotzdem probieren, nach dem Motto: Unser altes Auto hat zwar weniger Bodenfreiheit als der brandneue California, dafür haben wir weniger zu verlieren. Bovilla hat uns sehr gut gefallen, trotz holpriger Anfahrt und vielen 4x4 Quad-Touren welche an unserem Stellplatz vorbeikommen. Es gab ein hervorragendes albanisches Restaurant bei einer Touristenplattform. Fische konnten wir im See leider keine fangen, dafür haben wir einen Eisvogel gesehen.
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Photo row, equal height (260 + 258 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 0px 36px 0px">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td class="stack" width="265" valign="top" style="padding-right: 5px;">
+                              <img
+                                src="img/a01_bovilla.JPG"
+                                width="260"
+                                alt="Bovilla"
+                                class="fluid"
+                                style="display: block; width: 260px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Bovilla
+                              </div>
+                          </td>
+                          <td class="stack" width="263" valign="top" style="padding-left: 5px;">
+                              <img
+                                src="img/a01_bovilla_campsite.jpg"
+                                width="258"
+                                alt="Unser Stellplatz am Stausee Bovilla"
+                                class="fluid"
+                                style="display: block; width: 258px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Unser Stellplatz am Stausee Bovilla
+                              </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Photo row, equal height (186 + 332 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 10px 36px 0px">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td class="stack" width="191" valign="top" style="padding-right: 5px;">
+                              <img
+                                src="img/a01_sara_quad.jpg"
+                                width="186"
+                                alt="Sara und das Quad"
+                                class="fluid"
+                                style="display: block; width: 186px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Sara und das Quad
+                              </div>
+                          </td>
+                          <td class="stack" width="337" valign="top" style="padding-left: 5px;">
+                              <img
+                                src="img/a01_petri_heil.JPG"
+                                width="332"
+                                alt="Petri Heil!"
+                                class="fluid"
+                                style="display: block; width: 332px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Petri Heil!
+                              </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Section text -->
+                  <tr>
+                    <td class="pad" style="padding: 32px 36px 24px">
+                      <div style="font-family: Georgia, &quot;Times New Roman&quot;, serif; font-size: 17px; line-height: 1.65; color: #333d4d;">
+                        Nach einer Woche verlassen wir den abgeschiedenen Stausee und fahren nach Tirana. Wie in vielen anderen Ländern Europas gibt es dort momentan teils ziemlich gewaltvolle Studentenproteste. Viele lokale Kletterer beteiligen sich an den Protesten und wir bekommen Einblick in ihre Sorgen. Den Ursprung haben die Proteste in einer Umweltschutzbewegung gegen ein Luxusresort in dem Naturschutzgebiet der Vjosa-Narta-Lagune mit Geld aus der Trump-Familie. Mittlerweile sind die Forderungen jedoch weitreichender und vor allem gegen die aktuelle, sehr korrupte, Regierung gerichtet. Um nicht plötzlich im Tränengas zu landen besuchen wir die Stadt nur einmal am Morgen für einen 5 Sterne Luxus Brunch und ein wenig Sightseeing. Döner gibts hier für 2.- und auch traditionelle Restaurants sind günstig und man sitzt mit der ganzen Familie am Tisch. Wir sind erstaunt wie gut die junge albanische Generation Englisch spricht (Im Alter von 9 Jahren beinahe perfektes Englisch).
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Photo row, equal height (259 + 259 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 0px 36px 0px">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td class="stack" width="264" valign="top" style="padding-right: 5px;">
+                              <img
+                                src="img/a02_studenten_proteste.jpg"
+                                width="259"
+                                alt="Studentenproteste in Tirana"
+                                class="fluid"
+                                style="display: block; width: 259px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Studentenproteste in Tirana
+                              </div>
+                          </td>
+                          <td class="stack" width="264" valign="top" style="padding-left: 5px;">
+                              <img
+                                src="img/a02_luxus_brunch.jpg"
+                                width="259"
+                                alt="Luxus-Brunch in Tirana"
+                                class="fluid"
+                                style="display: block; width: 259px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Luxus-Brunch in Tirana
+                              </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Large photo (528 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 10px 36px 0px">
+                      <img
+                        src="img/a02_pasta.JPG"
+                        width="528"
+                        alt="Pasta"
+                        class="fluid"
+                        style="display: block; width: 528px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                      />
+                      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                        Pasta
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Section text -->
+                  <tr>
+                    <td class="pad" style="padding: 32px 36px 24px">
+                      <div style="font-family: Georgia, &quot;Times New Roman&quot;, serif; font-size: 17px; line-height: 1.65; color: #333d4d;">
+                        Wir verbringen die letzten eineinhalb Wochen vom Oktober in den tollen Klettergebieten rund um Tirana. In Krraba führt der Weg zum Klettergebiet am Haus von Fiqiri vorbei. Ein alter Albaner welcher uns jeden Abend auf dem Nachhauseweg zu Raki, Trauben und Vadhë (eine uns bisher unbekannte albanische Frucht) einlädt. Fiqiri ist Geografie-Fanatiker und kennt eine schier unbegrenzte Menge an Städten in allen Ländern der Welt und hat eine beeindruckende Menge an alten Banknoten.
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Photo row, equal height (259 + 259 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 0px 36px 0px">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td class="stack" width="264" valign="top" style="padding-right: 5px;">
+                              <img
+                                src="img/a03_sara_krraba.jpg"
+                                width="259"
+                                alt="Sara in Krraba"
+                                class="fluid"
+                                style="display: block; width: 259px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Sara in Krraba
+                              </div>
+                          </td>
+                          <td class="stack" width="264" valign="top" style="padding-left: 5px;">
+                              <img
+                                src="img/a03_sara_krraba_abseilen.jpg"
+                                width="259"
+                                alt="Sara beim Abseilen in Krraba"
+                                class="fluid"
+                                style="display: block; width: 259px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Sara beim Abseilen in Krraba
+                              </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Large photo (528 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 10px 36px 0px">
+                      <img
+                        src="img/a03_flo_brar.JPG"
+                        width="528"
+                        alt="Flo in Brar"
+                        class="fluid"
+                        style="display: block; width: 528px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                      />
+                      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                        Flo in Brar
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Large photo (528 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 10px 36px 0px">
+                      <img
+                        src="img/a03_krraba_esel.JPG"
+                        width="528"
+                        alt="Esel in Krraba"
+                        class="fluid"
+                        style="display: block; width: 528px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                      />
+                      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                        Esel in Krraba
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Large photo (528 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 10px 36px 0px">
+                      <img
+                        src="img/a03_fiqiri.JPG"
+                        width="528"
+                        alt="Fiqiri"
+                        class="fluid"
+                        style="display: block; width: 528px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                      />
+                      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                        Fiqiri
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- BLOCK: Photo row, equal height (187 + 331 px) -->
+                  <tr>
+                    <td class="pad" style="padding: 10px 36px 44px">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td class="stack" width="192" valign="top" style="padding-right: 5px;">
+                              <img
+                                src="img/a03_behind_the_scenes.jpg"
+                                width="187"
+                                alt="Behind the Scenes"
+                                class="fluid"
+                                style="display: block; width: 187px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Behind the Scenes
+                              </div>
+                          </td>
+                          <td class="stack" width="336" valign="top" style="padding-left: 5px;">
+                              <img
+                                src="img/a03_buesi.JPG"
+                                width="331"
+                                alt="Büsi"
+                                class="fluid"
+                                style="display: block; width: 331px; max-width: 100%; height: auto; border: 0; outline: 0;"
+                              />
+                              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; color: #6a7890; padding: 6px 2px 0;">
+                                Büsi
+                              </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- END SECTION 3 -->
+
+            <!-- ===================================================== -->
+            <!-- FOOTER — NAVY                                         -->
+            <!-- ===================================================== -->
+            <tr>
+              <td
+                class="pad"
+                style="
+                  background: #20304a;
+                  padding: 32px 36px;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 15px;
+                  line-height: 1.6;
+                  color: #ffffff;
+                "
+              >
+                <div
+                  style="
+                    font-family: Georgia, &quot;Times New Roman&quot;, serif;
+                    font-size: 20px;
+                    font-weight: bold;
+                    padding-bottom: 6px;
+                  "
+                >
+                  Bis zum nächsten Mal
+                </div>
+                <!-- ✏️ Update the month of the next issue -->
+                Die nächste Ausgabe kommt im November. Wer mitlesen möchte:
+                <a
+                  href="https://forms.gle/qRsbUFG2aygkXx288"
+                  style="
+                    color: #ffffff;
+                    font-weight: bold;
+                    text-decoration: underline;
+                  "
+                  >E-Mail-Adresse eintragen</a
+                >
+              </td>
+            </tr>
+            <!-- END FOOTER -->
+          </table>
+          <!-- End newsletter container -->
+        </td>
+      </tr>
+    </table>
+    <!-- End page background -->
+  </body>
+</html>
