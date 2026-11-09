@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light only" />
-    <title>Lieber Ajvar als kei Waar</title>
+    <title>Grüessli usem Balkan</title>
     <style>
       :root {
         --navy: #20304a;
@@ -13,7 +13,9 @@
         --text: #333d4d;
         --muted: #6a7890;
       }
-      * { box-sizing: border-box; }
+      * {
+        box-sizing: border-box;
+      }
       body {
         margin: 0;
         background: var(--bg);
@@ -42,14 +44,18 @@
         font-size: 13px;
         color: var(--muted);
       }
-      main { padding: 8px 0; }
+      main {
+        padding: 8px 0;
+      }
       .issue {
         display: block;
         padding: 28px 36px;
         text-decoration: none;
         color: inherit;
       }
-      .issue:nth-child(even) { background: var(--gray); }
+      .issue:nth-child(even) {
+        background: var(--gray);
+      }
       .issue img {
         display: block;
         width: 100%;
@@ -70,15 +76,22 @@
         font-size: 22px;
         color: var(--navy);
       }
-      .issue p { margin: 0 0 10px; }
+      .issue p {
+        margin: 0 0 10px;
+      }
       .more {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         color: var(--navy);
         border-bottom: 1px solid var(--navy);
       }
-      .issue:hover h2 { text-decoration: underline; }
-      .issue:focus-visible { outline: 3px solid var(--navy); outline-offset: -3px; }
+      .issue:hover h2 {
+        text-decoration: underline;
+      }
+      .issue:focus-visible {
+        outline: 3px solid var(--navy);
+        outline-offset: -3px;
+      }
       footer {
         background: var(--navy);
         color: #fff;
@@ -88,38 +101,42 @@
         text-align: center;
       }
       @media (max-width: 620px) {
-        .wrap { margin: 0; }
-        header, .issue, footer { padding-left: 20px; padding-right: 20px; }
+        .wrap {
+          margin: 0;
+        }
+        header,
+        .issue,
+        footer {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
       }
     </style>
   </head>
   <body>
     <div class="wrap">
       <header>
-        <h1>Lieber Ajvar als kei Waar</h1>
-        <p class="tagline">Der Newsletter – alle Ausgaben</p>
+        <h1>Grüessli usem Balkan</h1>
+        <p class="tagline">Alle Ausgaben</p>
       </header>
 
       <main>
         <!-- Newest issue first. Copy a block to add a new issue; colors alternate automatically. -->
         <a class="issue" href="october/">
-          <img src="october/img/a01_bovilla_see.jpg" alt="Bovilla-See in Albanien" />
+          <img
+            src="october/img/a01_bovilla_see.jpg"
+            alt="Bovilla-See in Albanien"
+          />
           <div class="date">Oktober 2026</div>
-          <h2>Montenegro, Peaks of the Balkans &amp; Tirana</h2>
-          <p>Berge, Grenzen, Welpen und weiterhin genug Ajvar.</p>
           <span class="more">Ausgabe lesen →</span>
         </a>
 
         <a class="issue" href="september/">
           <img src="september/img/kroatien14.jpeg" alt="Kroatien" />
           <div class="date">September 2026</div>
-          <h2>Kroatien &amp; Blagaj</h2>
-          <p>Küste, Meer und die Quelle der Buna.</p>
           <span class="more">Ausgabe lesen →</span>
         </a>
       </main>
-
-      <footer>Lieber Ajvar als kei Waar</footer>
     </div>
   </body>
 </html>
